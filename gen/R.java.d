@@ -1,0 +1,22 @@
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\gen\com\google\android\gcm\demo\app\Manifest.java \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\gen\com\google\android\gcm\demo\app\R.java \
+ : C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-hdpi\ic_launcher.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-hdpi\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-hdpi-v11\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-hdpi-v9\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-ldpi\ic_launcher.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-ldpi\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-ldpi-v11\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-ldpi-v9\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-mdpi\ic_launcher.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-mdpi\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-mdpi-v11\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-mdpi-v9\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-xhdpi\ic_launcher.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-xhdpi\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-xhdpi-v11\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\drawable-xhdpi-v9\ic_stat_gcm.png \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\layout\main.xml \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\menu\options_menu.xml \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\res\values\strings.xml \
+C:\Android\android-sdk\extras\google\gcm\samples\gcm-demo-client\bin\AndroidManifest.xml \
