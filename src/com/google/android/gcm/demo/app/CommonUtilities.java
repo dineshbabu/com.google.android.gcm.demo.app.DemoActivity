@@ -30,9 +30,10 @@ public final class CommonUtilities {
     //static final String SERVER_URL = "http://169.254.249.199:8080/gcm-demo"; // Office
 	//static final String SERVER_URL = "http://192.168.1.105:8080/gcm-demo"; //Home
 	//static final String SERVER_URL = "http://192.168.136.1:8080/gcm-demo"; //USB Tethering
-	static final String SERVER_URL = "http://169.254.249.199:8080/gcm-demo"; //Serena Guest wifi
+	//static final String SERVER_URL = "http://169.254.249.199:8080/gcm-demo"; //Serena Guest wifi
+	static final String SERVER_URL = "http://172.20.10.5:8080/gcm-demo"; //Jack iphone wifi
 	static final String FLOZ_URL = "http://10.130.12.104:3003"; //Floz's machine    
-    
+	static final String DATA_SERVER_URL = "http://169.254.249.199:3003";    
 
     /**
      * Google API project id registered to use GCM.

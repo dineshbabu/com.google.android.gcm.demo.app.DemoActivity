@@ -71,8 +71,8 @@ public class GCMIntentService extends GCMBaseIntentService {
         String message = intent.getExtras().getString("message");
         
         StoryDetails sd = new StoryDetails();
-        sd.setBlocked(Boolean.getBoolean(intent.getExtras().getString("blocked")));
-        sd.setUid(intent.getExtras().getLong("storyUid"));
+        sd.setBlocked(Boolean.valueOf(intent.getExtras().getString("blocked")));
+        sd.setUid(Long.parseLong(intent.getExtras().getString("uid")));
         String payLoad = "";
 
         Gson gson = new Gson();

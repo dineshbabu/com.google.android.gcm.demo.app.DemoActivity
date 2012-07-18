@@ -42,7 +42,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -128,11 +130,12 @@ public class DemoActivity extends Activity {
     @Override
     public void onNewIntent(Intent intent){
         super.onNewIntent(intent);
+    	
         String payLoad = intent.getDataString();
         //String storyDetails  = "";
         StringBuffer queryString = new StringBuffer();
         Gson gson = new Gson();
-        StoryDetails sd = gson.fromJson(payLoad, StoryDetails.class);
+        sd = gson.fromJson(payLoad, StoryDetails.class);
         
         /*Map<String, String> params = new HashMap<String, String>();
         params.put("user", "dinesh");
@@ -143,8 +146,8 @@ public class DemoActivity extends Activity {
         queryString.append(String.valueOf(sd.getUid()));
         try {
 			//storyDetails = ServerUtilities.fecthStoryDetails(SERVER_URL +"/sendAll", params);
-        	//sd = gson.fromJson(ServerUtilities.fecthStoryDetails(CommonUtilities.FLOZ_URL+queryString), StoryDetails.class);
-        	sd = gson.fromJson(ServerUtilities.fecthStoryDetails(SERVER_URL+"/sendAll"+queryString), StoryDetails.class);
+        	sd = gson.fromJson(ServerUtilities.fecthStoryDetails(CommonUtilities.DATA_SERVER_URL+queryString), StoryDetails.class);
+        	//sd = gson.fromJson(ServerUtilities.fecthStoryDetails(SERVER_URL+"/sendAll"+queryString), StoryDetails.class);
         	
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -177,7 +180,7 @@ public class DemoActivity extends Activity {
     }
     
     public void sendNewCriteria(View okButton){
-    	boolean success = false;
+       	boolean success = false;
     	StringBuffer queryString = new StringBuffer();
     	EditText textView =(EditText) this.findViewById(R.id.editText11);
     	String criteria = URLEncoder.encode(textView.getText().toString());
@@ -190,12 +193,25 @@ public class DemoActivity extends Activity {
         try {
 			//storyDetails = ServerUtilities.fecthStoryDetails(SERVER_URL +"/sendAll", params);
         	//sd = gson.fromJson(ServerUtilities.fecthStoryDetails(CommonUtilities.FLOZ_URL+queryString), StoryDetails.class);
-        	success = Boolean.valueOf(ServerUtilities.sendNewCriteria(SERVER_URL+"/sendAll"+queryString));
+        	//success = Boolean.valueOf(ServerUtilities.sendNewCriteria(SERVER_URL+"/sendAll"+queryString));
+        	success = Boolean.valueOf(ServerUtilities.sendNewCriteria(CommonUtilities.DATA_SERVER_URL+queryString));
+        	//findViewById(R.layout.this).setVisibility(RelativeLayout.GONE);
+      
         	this.finish();
+        	
+        	/*Intent intent= new Intent(this, this.getClass());
+        	intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        	startActivity(intent);*/
+
+        	
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    }
+    
+    public void closeApp(View cancelButton){
+    	this.finish();
     }
 
 
